@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.city-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.city-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.icon {
+  font-size: 3rem;
+}
+.weather-details {
+  background: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+  background: #eee;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.huge-icon { font-size: 5rem; }
+.huge-temp { font-size: 4rem; font-weight: bold; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+}
+
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 60px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.unit-switcher button {
+  background: #eee;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.unit-switcher button.active {
+  background: #2196f3;
+  color: white;
+}
+
+.unit-switcher button:first-child { border-radius: 5px 0 0 5px; }
+.unit-switcher button:last-child { border-radius: 0 5px 5px 0; }
+
+.search-container {
+  margin: 20px 0;
+}
+
+.search-input {
+  padding: 12px 20px;
+  width: 300px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.2);
+}
